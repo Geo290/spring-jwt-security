@@ -1,0 +1,22 @@
+meta {
+  name: Users: Login
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/login
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "username": "El Ema",
+    "passwrd": "12345"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
